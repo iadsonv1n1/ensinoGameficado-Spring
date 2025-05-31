@@ -1,0 +1,55 @@
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.log
+*.tmp
+*.cache
+
+# Diretórios gerados pelo Maven e IDE
+target/
+bin/
+build/
+out/
+.mvn/
+.mvn/wrapper/maven-wrapper.jar
+
+# Arquivos de configuração local
+.env
+*.properties
+*.yml.local
+*.yaml.local
+
+# Logs e relatórios
+logs/
+*.log
+*.log.*
+
+# IDE (IntelliJ, Eclipse, VSCode)
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.factorypath
+
+# Arquivos do Maven Wrapper (opcional, se não for usado)
+mvnw
+mvnw.cmd
+.mvn/wrapper/
+
+# Arquivos do Eclipse
+.springBeans
+
+# Arquivos do Docker (se não for usado)
+docker-compose.yml
+Dockerfile
+
+# Arquivos de banco de dados temporários (H2, etc.)
+*.db
+*.h2.db
+*.mv.db
