@@ -1,16 +1,8 @@
 package ensinoGameficado_Spring.controller;
 
-import ensinoGameficado_Spring.model.Turma;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
-@Controller
+@RestController
 public class TurmasController {
 
-    @RequestMapping("/")
-    public String index(){
-        return "index";
-    }
 }
