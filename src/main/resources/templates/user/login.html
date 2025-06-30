@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" th:href="@{/style-default.css}"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+<div class="container mb-5">
+    <div class="row justify-content-center mt-5 mb-5">
+        <img style="width: 420px" th:src="@{/logo.jpg}"/></h1>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-10 col-lg-6">
+
+            <form class="p-4 border rounded shadow-sm" method="post">
+                <h2 class="text-center mb-4">Login</h2>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="seu.email@exemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="password" placeholder="Sua senha">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <img th:src="@{/controle-logo.png}">
+    <p>© Copyright 2025 - Ensino Gameficado. Todos os direitos reservados.</p>
+
+</footer>
+</body>
+</html>

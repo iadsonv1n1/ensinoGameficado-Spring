@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Ensino Gameficado</title>
+
+    <link rel="stylesheet" th:href="@{/reset.css}"/>
+    <link rel="stylesheet" th:href="@{/style-default.css}"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="caixa mw-100">
+            <h1><img class="logo" th:src="@{/logo.jpg}"/></h1>
+            <nav>
+                <ul>
+                    <li><a href="cadastrar.html"> <img src="">Minhas Turmas</a></li>
+                    <li><a href="meuperfil.html">Meu Perfil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+           <div class="card d-flex justify-content-center align-items-center vh-100 mw-100" style="width: 50rem;">
+               <div>
+                   <form class="card-body ">
+                       <div class="mb-3">
+                           <label class="form-label">Nome</label>
+                           <input type="text" class="form-control">
+                           <div class="form-text">Digite seu nome e sobrenome</div>
+                       </div>
+                       <div class="mb-3">
+                           <label class="form-label">Email</label>
+                           <input type="email" class="form-control" placeholder="ex: exemplo@gmail.com">
+                           <div class="form-text">Digite um email atual que você tenha acesso</div>
+                       </div>
+                       <div class="mb-3">
+                           <label class="form-label">Confirmar Email</label>
+                           <input type="email" class="form-control">
+                           <div class="form-text">Digite novamente o endereço de email </div>
+                       </div>
+                       <div class="mb-3">
+                           <label class="form-label">Senha</label>
+                           <input type="password" class="form-control">
+                           <div class="form-text">Precisa conter pelo menos 8 digitos e um caracter especial(!@#*.)</div>
+                       </div>
+                       <button type="submit" class="btn btn-primary">Submit</button>
+                   </form>
+               </div>
+           </div>
+        </div>
+    </main>
+
+    <footer>
+        <img th:src="@{/controle-logo.png}">
+        <p>© Copyright 2025 - Ensino Gameficado. Todos os direitos reservados.</p>
+
+    </footer>
+
+</body>
+</html>

@@ -8,14 +8,18 @@ import lombok.*;
 import java.util.List;
 
 @Entity
-@Table(name = "professor")
+@Table(name = "teacher")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Professor extends Usuario{
+public class Teacher extends User {
 
-    @OneToMany(mappedBy = "professor")
-    private List<Turma> turmas;
+    @OneToMany(mappedBy = "teacher")
+    private List<Clazz> clazzes;
+
+    public Teacher(String name, String email, String password) {
+        super(name, email, password);
+    }
 }

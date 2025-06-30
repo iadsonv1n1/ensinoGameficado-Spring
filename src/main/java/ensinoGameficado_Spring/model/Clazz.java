@@ -7,23 +7,23 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
-@Table(name = "turma")
+@Table(name = "class")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Turma {
+public class Clazz {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome;
+    private String name;
 
     @ManyToOne
-    @JoinColumn(name = "professor_id")
-    private Professor professor;
-    private LocalDateTime dataCriacao = LocalDateTime.now();
+    @JoinColumn(name = "teacher_id")
+    private Teacher teacher;
+    private LocalDateTime creatingDate = LocalDateTime.now();
 
-    @ManyToMany(mappedBy = "turmas")
-    private List<Aluno> alunos;
+    @ManyToMany(mappedBy = "clazzes")
+    private List<Student> students;
 }
